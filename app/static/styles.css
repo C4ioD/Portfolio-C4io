@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: black;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.nav-item a {
+  font-family: "Saira Condensed", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+#inicio {
+  margin-top: 70px;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.header strong {
+  color: #ffc403;
+}
+
+.header button {
+  border-radius: 4px;
+  font-size: 0.8rem;
+  background-color: #ffc403;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.imagem {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagem img {
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  font-family: "Russo One", sans-serif;
+  font-size: 2.5rem;
+  padding-top: 60px; /* ajuste este valor para a altura do seu menu */
+  margin-top: -60px; /* valor negativo igual ao padding */
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: flex-start;
+}
+
+#sobre img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid;
+}
+
+.inf {
+  width: 100%;
+}
+
+.inf ul {
+  padding-left: 0;
+}
+
+.inf-item {
+  list-style: 500;
+  list-style-type: none;
+  border-bottom: 1px solid #eeeeee59;
+  padding-bottom: 0.3rem;
+}
+
+.inf-item strong {
+  font-weight: 300;
+}
+
+.descricao {
+  color: #cac8c8;
+}
+
+.carousel-item i {
+  font-size: 50px;
+}
+
+.carousel-item i img {
+  width: 50px;
+  height: 50px;
+}
+
+.container-educacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.educacao-item {
+  list-style-type: none;
+}
+
+.educacao-item h4 {
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+}
+
+.educacao-item h5 {
+  background: #a46400;
+  padding: 2px;
+  width: 6em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.educacao .educacao-item {
+  position: relative;
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #ffffff;
+}
+
+.educacao .educacao-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: #ecebe9;
+  border: 2px solid #000813;
+  border-radius: 50%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mais-projetos {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  position: absolute;
+  display: flex;
+}
+
+.container-contato {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.loc-item {
+  color: #000000;
+  margin: 20px;
+}
+
+.card-loc {
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  border-radius: 3px;
+}
+
+.inf-loc {
+  margin: 25px auto;
+  top: 50%;
+  width: 80%;
+  height: 90%;
+}
+
+.inf-text-item {
+  color: #000;
+  text-align: center;
+}
+
+.inf-text-item h6,
+.inf-text-item i {
+  display: inline;
+  width: 6em;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inf-map iframe {
+  width: 100%;
+  height: 250px;
+}
+
+#contato form label {
+  color: #000;
+  font-weight: 500;
+}
+
+#input-mensagem {
+  height: 200px;
+}
+
+/*animações*/
+
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="down"] {
+  transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+  transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

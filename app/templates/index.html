@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Portfólio Caio</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-dark fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#sobre">SOBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#educacao">EDUCAÇÃO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projetos">PROJETOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">CONTATO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="container">
+        <div class="header">
+          <h1>
+            Olá, eu sou o <strong>Caio</strong> <br />
+            Seja bem vindo(a) ao meu portfólio de projetos!
+          </h1>
+          <p>
+            Sou um explorador no vasto universo da programação, onde aplico
+            minha criatividade e expertise para desenvolver sistemas e
+            automatizar processos de forma eficiente
+          </p>
+          <form action="" method="get">
+            <button>Download Currículo</button>
+          </form>
+        </div>
+        <div class="imagem">
+          <img src="./img/Soft development.png" alt="" />
+        </div>
+      </section>
+
+      <section id="sobre" class="container">
+        <h2 class="title">Sobre</h2>
+        <div class="container-flex">
+          <div class="img-perfil">
+            <img src="./img/Perfil.png" alt="" data-anime="left" />
+          </div>
+
+          <div class="inf" data-anime="up">
+            <h3>Caio Dias Evangelista</h3>
+            <p class="descricao">
+              Graduado em Engenharia Mecânica, com pós-graduação em Ciência de
+              Dados e Engenharia de Software, durante minha jornada acadêmica,
+              descobri o fascinante universo da programação. Percebi suas
+              infinitas possibilidades e o poder que aqueles que a dominam
+              possuem, encontrando assim um novo caminho.
+            </p>
+            <ul>
+              <li class="inf-item">Nascimento: <strong>29/09/1998</strong></li>
+
+              <li class="inf-item">Idade: <strong>25</strong></li>
+
+              <li class="inf-item">Cidade: <strong>Timóteo</strong></li>
+
+              <li class="inf-item">Naturalidade <strong>Brasileiro</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div id="t-skills" class="title">My Skills</div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-anime="left"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-python-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Python</p>
+                  <p class="text-center mt-1">
+                    Linguagem de programação versátil, amplamente utilizada em
+                    diversos domínios, como desenvolvimento web, análise de
+                    dados e automação.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-django-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Django</p>
+                  <p class="text-center mt-1">
+                    Framework robusto para criação rápida e escalável de
+                    aplicativos web.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-flask-original d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Flask</p>
+                  <p class="text-center mt-1">
+                    Framework leve e flexível para construção ágil de
+                    aplicativos web.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-html5-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">HTML</p>
+                  <p class="text-center mt-1">
+                    Linguagem de marcação para estruturação de conteúdo em
+                    páginas web.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-css3-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">CSS</p>
+                  <p class="text-center mt-1">
+                    Linguagem de estilização para modificar a apresentação
+                    visual de páginas HTML.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-bootstrap-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Bootstrap</p>
+                  <p class="text-center mt-1">
+                    Framework de front-end que facilita o desenvolvimento de
+                    interfaces web responsivas e estilizadas, utilizando HTML,
+                    CSS e componentes pré-projetados.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-azuresqldatabase-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">SQL</p>
+                  <p class="text-center mt-1">
+                    Linguagem de consulta estruturada usada para gerenciar e
+                    manipular dados em bancos de dados relacionais.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-pandas-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Pandas</p>
+                  <p class="text-center mt-1">
+                    Biblioteca poderosa para manipulação e análise de dados em
+                    Python.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-matplotlib-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Matplotlib</p>
+                  <p class="text-center mt-1">
+                    Biblioteca para visualização estática de dados em Python,
+                    útil para criar gráficos informativos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-plotly-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Plotly</p>
+                  <p class="text-center mt-1">
+                    Biblioteca para visualização interativa de dados em Python,
+                    permitindo criar gráficos dinâmicos e personalizados.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-scikitlearn-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Scikitilearn</p>
+                  <p class="text-center mt-1">
+                    Biblioteca essencial para implementar algoritmos de machine
+                    learning em Python, oferecendo ferramentas simples e
+                    eficientes.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-selenium-original d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Selenium</p>
+                  <p class="text-center mt-1">
+                    Ferramenta para automação de testes e scraping web,
+                    permitindo interagir com navegadores e realizar ações
+                    automatizadas em páginas da web.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-vscode-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Vscode</p>
+                  <p class="text-center mt-1">
+                    Ambiente de desenvolvimento integrado (IDE) leve e poderoso,
+                    com suporte a várias linguagens e extensões.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-github-original d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Github</p>
+                  <p class="text-center mt-1">
+                    Plataforma de hospedagem de código que utiliza o Git,
+                    facilitando a colaboração e o compartilhamento de projetos.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-git-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Git</p>
+                  <p class="text-center mt-1">
+                    Sistema de controle de versão distribuído, essencial para
+                    rastrear alterações em projetos de software e colaborar em
+                    equipe.
+                  </p>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-jupyter-plain-wordmark d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Jupyter</p>
+                  <p class="text-center mt-1">
+                    Ambiente interativo para criação de notebooks que integram
+                    código, visualizações e texto explicativo, ideal para
+                    experimentação e prototipagem rápida.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i
+                    class="devicon-figma-plain d-flex justify-content-center"
+                  ></i>
+                  <p class="text-center mt-1">Figma</p>
+                  <p class="text-center mt-1">
+                    Ferramenta de design de interface de usuário colaborativa e
+                    baseada na nuvem, facilitando o trabalho em equipe e a
+                    criação de protótipos interativos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i class="d-flex justify-content-center">
+                    <img src=./img/icons/excel.svg />
+                  </i>
+                  <p class="text-center mt-1">Excel</p>
+                  <p class="text-center mt-1">
+                    Software de planilha eletrônica, usado para análise de
+                    dados, cálculos, criação de gráficos, entre outros
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i class="d-flex justify-content-center">
+                    <img src="/img/icons/powerbi.svg" />
+                  </i>
+                  <p class="text-center mt-1">Power Bi</p>
+                  <p class="text-center mt-1">
+                    Ferramenta de análise de negócios, que permite visualizar e
+                    compartilhar insights de dados em painéis interativos e
+                    relatórios dinâmicos.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i class="d-flex justify-content-center">
+                    <img src="./img/icons/powerapps.svg" />
+                  </i>
+                  <p class="text-center mt-1">Power Apps</p>
+                  <p class="text-center mt-1">
+                    Criação de aplicativos empresariais sem a necessidade de
+                    codificação, permitindo automatizar processos e conectar
+                    dados.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-3 m-1 icon">
+                  <i class="d-flex justify-content-center">
+                    <img src="./img/icons/sharepoint.svg" />
+                  </i>
+                  <p class="text-center mt-1">SharePoint</p>
+                  <p class="text-center mt-1">
+                    Plataforma de colaboração e gerenciamento de conteúdo, usada
+                    para criar intranets, portais e sites de equipe, facilitando
+                    o compartilhamento de informações.
+                  </p>
+                </div>
+                <div class="col-md-3 m-1 icon">
+                  <i class="d-flex justify-content-center">
+                    <img src="./img/icons/powerpoint.svg" />
+                  </i>
+                  <p class="text-center mt-1">Power Point</p>
+                  <p class="text-center mt-1">
+                    Apresentações visuais com slides, gráficos, imagens e
+                    animações, adequado para comunicação e compartilhamento de
+                    ideias.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="educacao" class="container">
+        <div class="title">Educação</div>
+
+        <div class="container-educacao">
+          <div class="educacao">
+            <ul>
+              <li class="educacao-item" data-anime="up">
+                <h4>Engenharia Mecânica</h4>
+                <h5>2018-2023</h5>
+                <p>Faculdade Pitágoras</p>
+              </li>
+              <li class="educacao-item" data-anime="up">
+                <h4>
+                  POS - BUSINESS INTELLIGENCE, BIG DATA E ANALYTICS - CIÊNCIA DE
+                  DADOS
+                </h4>
+                <h5>2023-2024</h5>
+                <p>Anhanguera</p>
+              </li>
+              <li class="educacao-item" data-anime="up">
+                <h4>ENGENHARIA DE SOFTWARE</h4>
+                <h5>2023-2024</h5>
+                <p>Ananguera</p>
+              </li>
+            </ul>
+          </div>
+          <div class="img-educacao">
+            <img src="./img/Rick.png" alt="" width="400px" data-anime="right" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="container">
+        <div class="title">Projetos</div>
+
+        <div class="cards" data-anime="left">
+          <div class="card" style="width: 18rem">
+            <img src="./img/Background.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="./img/Background.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="./img/Background.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <p id="mais-projetos"><a href="#">Mais projetos +</a></p>
+      </section>
+
+      <section id="contato" class="container">
+        <div class="title">Contato</div>
+        <div class="container-contato">
+          <div class="card-loc" data-anime="left">
+            <div class="inf-loc">
+              <div class="inf-text">
+                <div class="inf-text-item">
+                  <i class="bi bi-geo-alt-fill"> </i>
+                  <h6>Timóteo-MG</h6>
+                  <p>R.Sebastião Malaquias Ferreiras</p>
+                </div>
+                <div class="inf-text-item">
+                  <i class="bi bi-envelope-fill"> </i>
+                  <h6>E-mail</h6>
+                  <p>caiodias29091@gmail.com</p>
+                </div>
+              </div>
+              <div class="inf-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1879.5504088177622!2d-42.64516800997007!3d-19.580180996982907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5519e7431114b%3A0x5cc6e6d969321ce1!2sR.%20Sebasti%C3%A3o%20Malaquias%20Ferreira%20-%20S%C3%A3o%20Jos%C3%A9%2C%20Tim%C3%B3teo%20-%20MG%2C%2035182-027!5e0!3m2!1spt-BR!2sbr!4v1716335524168!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-loc container p-4" data-anime="right">
+            <form>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Nome</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Mensagem</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="8"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+
+ *** LINGUAGENS, FREMEWORKS E BIBLIOTECAS***
+
+ Front-End: HTML/CSS, JavaScript e Boostrap
+ Back-End: Python, Flask
+ Manipular Imagens: Pillow
+ Manipulação de Diretorios: OS
+
+ ** ESTRUTURA DOS DIRETORIOS (PASTA) ***
+ 
+|-- PORTIFOLIO-C4IO
+|   |-- app
+|   |   |-- __init__.py
+|   |   |-- routes.py
+|   |   |-- models.py
+|   |   |-- forms.py
+|   |   |-- templates/
+|   |   |   |-- base.html
+|   |   |   |-- nav.html
+|   |   |   |-- index.html
+|   |   |   |-- projetos.html
+|   |   |   |-- editprojetos.html
+|   |   |   |-- login.html
+|   |   |   |-- sobre.html
+|   |   |-- static/
+|   |   |   |-- img/
+|   |   |   |-- bootstrap/
+|   |   |   |   |-- css/
+|   |   |   |   |-- js/
+|   |   |   |-- styles.css
+|   |   |   |-- scripts.js
+|   |-- venv
+|   |-- run.py
+|   |-- planejamento.txt
+|   |-- README.md
+
+*** BANCO DE DADOS ***
+
+ Tipo: SQLITE
+ Tabelas: fUsuario, fSobre, fEducação, fProjetos, fExperiência, fSkills
+
+  * Models *
+
+    fUsuario:
+      - Username;
+      - Senha;
+
+    fSobre:
+      - Nome;
+      - Descrição;
+      - Data de Nascimento;
+      - Naturalidade;
+      - Cidade;
+      - Endereço (Sem Número);
+      - Email;
+
+    fEducação:
+      - Nome Curso;
+      - Data Inicio;
+      - Data Fim;
+      - Instituição;
+      
+    fProjetos:
+      - Titulo;
+      - Resumo;
+      - Descrição;
+      - Capa;
+    
+    fExperiências:
+      - Cargo;
+      - Empresa;
+      - Data Incio;
+      - Data Fim;
+      - Descrição;
+
+    fSkills:
+      - Nome;
+      - Resumo;
+      - Icone;
+
+
+
