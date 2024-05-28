@@ -30,6 +30,7 @@
 |   |   |   |-- styles.css
 |   |   |   |-- scripts.js
 |   |-- venv
+|   |-- secrets.py
 |   |-- run.py
 |   |-- planejamento.txt
 |   |-- README.md
