@@ -42,18 +42,9 @@
 
   * Models *
 
-    fUsuario:
+    dUsuario:
       - Username;
       - Senha;
-
-    fSobre:
-      - Nome;
-      - Descrição;
-      - Data de Nascimento;
-      - Naturalidade;
-      - Cidade;
-      - Endereço (Sem Número);
-      - Email;
 
     fEducação:
       - Nome Curso;
