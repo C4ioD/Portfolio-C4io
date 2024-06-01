@@ -25,3 +25,6 @@ def login():
   return render_template('login.html', form_login=form_login)
 
 
+@app.route('/edit')
+def edit():
+  return  render_template('edit.html')

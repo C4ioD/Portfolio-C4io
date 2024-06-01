@@ -42,6 +42,7 @@ class Sobre(db.Model):
   cidade = db.Column(db.String, nullable=True, default='Timóteo')
   estado = db.Column(db.String, nullable=True, default='Minas Gerais')
   email= db.Column(db.String, nullable=True, default='caiodias29091@gmail.com')
+  imagem= db.Column(db.String, default='default.jpg')
 
 
 class Educacao(db.Model):
@@ -55,7 +56,7 @@ class Projetos(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   resumo = db.Column(db.String, nullable=False)
   descricao = db.Column(db.String, nullable=False)
-  capa = db.Column(db.String, default='default.jpg')
+  capa = db.Column(db.String, default='default_projetos.jpg')
 
 class Experiencias(db.Model):
   id = db.Column(db.Integer, primary_key=True)
