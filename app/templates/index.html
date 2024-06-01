@@ -32,7 +32,7 @@
       </div>
 
       <div class="inf" data-anime="up">
-        <h3>Caio Dias Evangelista</h3>
+        <h3>{{inf_sobre.nome}}</h3>
         <p class="descricao">
           Graduado em Engenharia Mecânica, com pós-graduação em Ciência de Dados
           e Engenharia de Software, durante minha jornada acadêmica, descobri o
@@ -41,13 +41,19 @@
           encontrando assim um novo caminho.
         </p>
         <ul>
-          <li class="inf-item">Nascimento: <strong>29/09/1998</strong></li>
+          <li class="inf-item">
+            Nascimento: <strong>{{inf_sobre.data_nascimento}}</strong>
+          </li>
 
-          <li class="inf-item">Idade: <strong>25</strong></li>
+          <li class="inf-item">Idade: <strong>{{idade}}</strong></li>
 
-          <li class="inf-item">Cidade: <strong>Timóteo</strong></li>
+          <li class="inf-item">
+            Cidade: <strong>{{inf_sobre.cidade}}</strong>
+          </li>
 
-          <li class="inf-item">Naturalidade <strong>Brasileiro</strong></li>
+          <li class="inf-item">
+            Naturalidade <strong>{{inf_sobre.naturalidade}}</strong>
+          </li>
         </ul>
       </div>
     </div>

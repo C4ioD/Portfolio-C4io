@@ -43,7 +43,7 @@ class Sobre(db.Model):
   estado = db.Column(db.String, nullable=True, default='Minas Gerais')
   email= db.Column(db.String, nullable=True, default='caiodias29091@gmail.com')
   imagem= db.Column(db.String, default='default.jpg')
-
+  endereco = db.Column(db.String, default='Rua Sebastão Malaquias Ferreira')
 
 class Educacao(db.Model):
   id = db.Column(db.Integer, primary_key=True)

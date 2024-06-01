@@ -14,7 +14,10 @@ class FormSobre(FlaskForm):
   naturalidade = StringField('Naturalidade', validators=[DataRequired()])
   cidade = StringField('Cidade', validators=[DataRequired()])
   estado = StringField('Estado', validators=[DataRequired()])
-  email = StringField('E-mail', validators=[DataRequired(), Email()])
+  endereco = StringField('Endereço', validators=[DataRequired()])
+  email = StringField('E-mail', validators=[DataRequired()])
+  profile = FileField('Imagem')
+  btn_sobre = SubmitField('Salvar')
 
 class FormEducacao(FlaskForm):
   nome_curso = StringField('Curso', validators=[DataRequired()])

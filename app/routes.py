@@ -1,12 +1,15 @@
 from app import app, db , bcrypt
-from app.models import Usuario
+from app.models import Usuario, Sobre
 from flask import render_template, url_for, redirect, flash
-from app.forms import FormLogin
+from app.forms import FormLogin, FormSobre
+import datetime
 
 
 @app.route("/")
 def index():
-  return render_template('index.html')
+  inf_sobre = Sobre.query.filter_by(id='1').first()
+  idade = (datetime.date.today() - inf_sobre.data_nascimento)/365
+  return render_template('index.html', inf_sobre=inf_sobre, idade=idade.days)
 
 @app.route('/erro')
 def erro():
@@ -28,3 +31,36 @@ def login():
 @app.route('/edit')
 def edit():
   return  render_template('edit.html')
+
+@app.route('/edit/sobre', methods=['GET','POST'])
+def sobre():
+  form_sobre = FormSobre()
+  if form_sobre.validate_on_submit():
+
+    if not Sobre.query.filter_by(id='1').first():
+      sobre = Sobre(
+        nome=form_sobre.nome.data,
+        data_nascimento=datetime.strptime(form_sobre.data_nascimento.data,'%d-%m-%Y'),
+        naturalidade=form_sobre.naturalidade.data,
+        cidade=form_sobre.cidade.data,
+        estado=form_sobre.estado.data,
+        email=form_sobre.email.data,
+        imagem=form_sobre.profile.data,
+        endereco= form_sobre.endereco.data
+        )
+      db.session.add(sobre)
+      db.session.commit()
+    
+    else:
+      sobre = Sobre.query.filter_by(id='1').first()
+      sobre.nome = form_sobre.nome.data
+      sobre.data_nascimento= form_sobre.data_nascimento.data
+      sobre.naturalidade= form_sobre.naturalidade.data
+      sobre.cidade= form_sobre.cidade.data
+      sobre.estado= form_sobre.estado.data
+      sobre.email= form_sobre.email.data
+      sobre.imagem= form_sobre.profile.data
+      sobre.endereco= form_sobre.endereco.data
+      db.session.commit()
+
+  return render_template('sobre.html', form_sobre=form_sobre, inf_sobre=sobre)
